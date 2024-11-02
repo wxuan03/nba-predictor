@@ -1,0 +1,20 @@
+/* src/App.css */
+
+.app-container {
+  display: flex;
+  flex-direction: row; /* Video on the left, notes on the right */
+  height: 100vh; /* Full viewport height */
+  width: 100vw;
+}
+
+.video-section {
+  flex: 1.5; /* Adjust this to control the width of the video section */
+  height: 100%; /* Ensures the video section fills the height */
+  border-right: 1px solid #ccc;
+}
+
+.notes-section {
+  flex: 2;
+  overflow-y: auto;
+  height: 100%; /* Ensures the notes section fills the height */
+}
